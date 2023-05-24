@@ -1,0 +1,41 @@
+﻿<Window x:Class="auxalia_desktop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:auxalia_desktop" 
+        xmlns:viewmodels1="clr-namespace:ViewModels;assembly=Domains"
+        d:DataContext="{d:DesignInstance Type= viewmodels1:MainWindowViewModel}"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid ShowGridLines="True">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100px" ></RowDefinition>
+            <RowDefinition ></RowDefinition>
+           
+        </Grid.RowDefinitions>
+
+        <Button
+            Content="Load"
+            HorizontalAlignment="Left" 
+             Margin="609,46,0,14"
+            Command="{Binding ClickCommand}" Width="106" 
+        />
+
+        <TextBox
+            Text="{Binding ThePath}" Margin="24,50,216,14" 
+         />
+
+        <DataGrid x:Name="datagrid1"
+                  Grid.Row="1" 
+                  AutoGenerateColumns="True" 
+                  Margin="24,51,39,25"
+                  ItemsSource="{Binding Path=DataView1}"
+                  />
+
+    </Grid>
+</Window>
