@@ -1,5 +1,3 @@
-# auxalia-desktop-app
-- An application to manage all Applications of Auxalia  in one place
-- Update/Downgrade/Uninstal products
+# A Hello,World! sampple app for WPF MVVM CommunityToolkit.
 
 
