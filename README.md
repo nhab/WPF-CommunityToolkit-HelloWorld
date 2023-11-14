@@ -2,6 +2,11 @@
 ## Setup
 - To use **CommunityToolkit.Mvvm** in the project, its **nuget package** is added to the project
 - The application Main window is set In the **StartupUrl** property of **Application** tag of **App.xaml**
+- Set Datacontext of the mainWindow.xaml to the corresponding viewModel:
+```
+xmlns:viewmodels1="clr-namespace:ViewModels;assembly=Domains"
+d:DataContext="{d:DesignInstance Type= viewmodels1:MainWindowViewModel}"
+```
 ## Relay command
 - The Button funcionality is set in the command property :
 ```
