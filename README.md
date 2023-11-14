@@ -7,6 +7,14 @@
 xmlns:viewmodels1="clr-namespace:ViewModels;assembly=Domains"
 d:DataContext="{d:DesignInstance Type= viewmodels1:MainWindowViewModel}"
 ```
+or set the datacontext in the code behind of the MainWindow xaml:
+```
+ public MainWindow()
+ {
+     DataContext = new MainWindow_ViewModel();
+     InitializeComponent();
+ }
+```
 ## Relay command
 - The Button funcionality is set in the command property :
 ```
