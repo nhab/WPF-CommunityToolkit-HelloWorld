@@ -7,7 +7,7 @@
 ```
  <Button  Command="{Binding ClickCommand}"  ... />
 ```
-  The real impelementation of the Click command is in the **Click()** method of The **MainWindowViewModel** class in **MainWindowViewModel.cs** :
+  The real impelementation of the Click command is in **Click()** method > **MainWindowViewModel** class > **MainWindowViewModel.cs** :
 ```
 [RelayCommand(CanExecute = nameof(CanClick))]
 private async Task Click()
