@@ -1,4 +1,4 @@
-# A Hello,World! sampple app for WPF MVVM CommunityToolkit.
+# A Hello,World! sample app for WPF MVVM CommunityToolkit.
 ## Setup
 - To use **CommunityToolkit.Mvvm** in the project, its **nuget package** is added to the project
 - The application Main window is set In the **StartupUrl** property of **Application** tag of **App.xaml**
