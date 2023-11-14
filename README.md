@@ -28,7 +28,7 @@ CommunityToolkit creates public DataView1 property which can be changed inside t
      DataView1 = FolderService.Get(thePath).DefaultView;   
  }
 ```
-This will be reflected to the anything which is binded to DataView1 in the Xaml file(MainWindow.xaml)
+This will be reflected to any element which is binded to DataView1 in the Xaml file(MainWindow.xaml)
 for Example:
 ```
 <DataGrid
